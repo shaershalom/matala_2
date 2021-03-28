@@ -16,7 +16,7 @@ def countword()->int:
     text =file.read()
     file.close()
     text=text.split()
-    word=text[0]
+    word=(text[0]).lower()
     new_text=[]
     for all_word in text[1:]:
         new_text.append(revword(all_word))     
